@@ -33,7 +33,7 @@ class MyGLSurfaceView : GLSurfaceView {
 
     constructor(context: Context?): super(context) {
         // Create an OpenGL ES 2.0 context
-        setEGLContextClientVersion(2)
+        setEGLContextClientVersion(3)
 
         myRenderer = MyGLRendererExample()
 

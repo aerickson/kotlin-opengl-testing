@@ -1,6 +1,7 @@
 package com.danefinlay.util
 
 import android.opengl.GLES20
+import android.opengl.GLES30
 import android.util.Log
 import com.danefinlay.opengltesting.sampleFragmentShaderCode
 import com.danefinlay.opengltesting.sampleVertexShaderCode
@@ -20,7 +21,7 @@ data class GLESProgram(val programRef: Int)
  */
 fun createGLESProgram(): GLESProgram {
     // create empty OpenGL ES Program
-    return GLESProgram(GLES20.glCreateProgram())
+    return GLESProgram(GLES30.glCreateProgram())
 }
 
 /**

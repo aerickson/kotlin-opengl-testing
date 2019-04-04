@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(myGLView)
         // setContentView(R.layout.activity_main)
         // DON'T restore any state information here. Do so in onRestoreInstanceState
+
+//        gl.glGetString(GL10.GL_VERSION).also {
+//            Log.w("TEST", "Version: $it")
+//        }
+
     }
 
     override fun onSaveInstanceState(savedInstanceState: Bundle?) {
